@@ -44,7 +44,6 @@ myspace::String myspace::String::substr(int fromIndex = 0, int len = -1) {
     memcpy(returnValue.m_Buffer, this->m_Buffer + fromIndex, len);
     returnValue.m_Buffer[len] = 0;
     return returnValue;
-
 }
 myspace::String& myspace::String::operator = (const String &string) {
     if(this != &string) {
